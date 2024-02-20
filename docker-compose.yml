@@ -28,3 +28,9 @@ services:
             - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
         ports:
             - "5432:5432"
+        volumes:
+            - portfolio_db:/var/lib/postgresql/data
+
+volumes:
+  portfolio_db:
+    name: portfolio_db
