@@ -19,7 +19,7 @@ class Author(TimeStampMixin):
         verbose_name_plural = "Авторы"
 
     def __str__(self) -> str:
-        return f'Автор (id={self.pk}) {self.get_full_name()}'
+        return f"Автор (id={self.pk}) {self.get_full_name()}"
 
     def get_full_name(self) -> str:
-        return f'{self.first_name} {self.last_name}'
+        return f"{self.first_name} {self.last_name}"
